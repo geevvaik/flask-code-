@@ -7,8 +7,7 @@ app = Flask('server app')
 def home():
     return render_template('home.html')
 
-    
-app = Flask(__name__, static_url_path='/static')
+
 
 
 if __name__ == "__main__":
