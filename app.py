@@ -11,8 +11,3 @@ def home():
 if __name__ == "__main__":
    app.run()
 
-{% block styles %}
-{{super()}}
-<link rel="stylesheet"
-      href="{{url_for('.static', filename='mystyle.css')}}">
-{% endblock %}
