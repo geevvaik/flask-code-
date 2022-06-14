@@ -1,0 +1,43 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>server</title>
+    <link rel="stylesheet" href="static/styles/mainpage.css">
+  </head>
+  <body>
+    <h1>Welcome to the HomePage!</h1>
+  </body>
+</html>
+
+<style>
+body{
+  font-family: Arial;
+
+}
+
+</style>
+
+
+<h1>List shippers</h1>
+
+<p>
+List of Shippers!
+</p>
+
+<table border="1">
+
+{% for shipper in shippers %}
+    <tr>
+    <td>{{ shipper.shipperid }}</td>
+
+    <td>{{ shipper.companyname }}</td>
+
+    <td>{{ shipper.phone }}</td>
+
+
+    </tr>
+{% endfor %}
+
+</table>
